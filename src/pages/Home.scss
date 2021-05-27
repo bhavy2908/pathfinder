@@ -1,0 +1,170 @@
+.home {
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .top {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    
+    display: flex;
+    
+    padding-top: 10px;
+
+    .title {
+      color: white;
+      padding: 0 20px;
+      text-decoration: none;
+      text-decoration-style: none;
+      flex-grow: 2;
+      
+    }
+
+    .top-button-container {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      
+      flex-grow: 1;
+      margin-left: 750px;
+    }
+
+    .create-maze {
+      background-color: cyan;
+      
+      margin-right: 0px;
+      width: fit-content;
+      padding: auto;
+      height: 49px;
+      border: 2px solid white;
+      margin: 0 30px;
+
+      &:hover {
+        opacity: 0.9;
+        background-color: white;
+      }
+      &:focus {
+        outline: none;
+      }
+      &:active {
+        background-color: cyan;
+      }
+      &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+
+    
+
+    .clear-board {
+      background-color: orange;
+      margin-right: 0px;
+      width: fit-content;
+      height: 49px;
+      border: 2px solid white;
+      margin: 0 30px;
+
+      &:hover {
+        opacity: 0.9;
+        background-color: white;
+      }
+      &:focus {
+        outline: none;
+      }
+      &:active {
+        background-color: orange;
+      }
+      &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+  }
+  .middle {
+    width: 100%;
+    height: 4%;
+    background-color: grey;
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+
+  .bottom {
+    width: 100%;
+    height: 86%;
+    background-color: grey;
+    position: absolute;
+    top: 14%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .filter-container {
+      width: 100%;
+      border: 5px solid black;
+      
+      
+      background-color: white;
+      margin-left: 20px;
+      padding: 16px 20px 24px 20px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .show-tutorial {
+      position: relative;
+      margin-left: 30px;
+      margin-top: 30px;
+      justify-content: center;
+      display: flex;
+
+      .idea-icon {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 4px;
+        left: 10px;
+      }
+
+      button {
+        
+        width: 200px;
+        height: 49px;
+        border: none;
+        color: #fff;
+        position: relative;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        &:hover {
+          opacity: 0.9;
+        }
+        &:focus {
+          outline: none;
+        }
+        &:active {
+          outline: white;
+        }
+        &:disabled {
+          pointer-events: none;
+          opacity: 0.5;
+        }
+      }
+    }
+
+   
+    .grid-container-parent {
+      width: 77%;
+      padding-right: 20px;
+
+      @media (max-width: 1366px) {
+        width: 77%;
+      }
+    }
+  }
+}
